@@ -6,6 +6,7 @@ public class Book{
 	private String title;
 	private String author;
 	private String description;
+	public int quantity;
 	public double price;
 	
 	
@@ -46,5 +47,8 @@ public class Book{
 		System.out.printf("%s %s %s %f", getAuthor(), getTitle(), getDescription(), getPrice());
 	}
 	
+	public void printPrice(int quantity) {
+		System.out.println(getPrice()*quantity);
+	}
 	
 }
